@@ -2,13 +2,14 @@
 #ifndef ROBO_HARDWARE_H
 #define ROBO_HARDWARE_H
 
+#define RH_MAX_TAMANHO_LOG
 
 #include <Arduino.h>
 #include <Servo.h>
 
 class robo_hardware{
-float Log[1000];
-int logSize
+float Log[RH_MAX_TAMANHO_LOG];
+int logSize;
   
 public:
 	robo_hardware();
