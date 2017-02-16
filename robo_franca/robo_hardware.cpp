@@ -88,3 +88,6 @@ void robo_hardware::acionarMotores(float motor1, float motor2){
 void robo_hardware::acionarServo(float angulo){
   servo.write(angulo);
 }
+
+void robo_hardware::addLog(float dado){
+}

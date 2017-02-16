@@ -6,8 +6,10 @@
 #include <Arduino.h>
 #include <Servo.h>
 
-
 class robo_hardware{
+float Log[1000];
+int logSize
+  
 public:
 	robo_hardware();
         void configurar();
@@ -16,6 +18,7 @@ public:
         void lerXbee();
         void acionarMotores(float motor1, float motor2);
         void acionarServo(float angulo);
+        void addLog(float dado);
 
 };
 
