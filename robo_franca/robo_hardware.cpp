@@ -90,4 +90,8 @@ void robo_hardware::acionarServo(float angulo){
 }
 
 void robo_hardware::addLog(float dado){
+  if(logSize < RH_MAX_TAMANHO_LOG ){
+    Log[logSize];
+    logSize++;
+  }
 }
